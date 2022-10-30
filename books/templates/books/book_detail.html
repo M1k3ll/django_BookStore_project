@@ -10,6 +10,7 @@
         <p>{{ book.context }}</p>
         <p>{{ book.author }}</p>
         <p>{{ book.price }} </p>
+        <a href="{% url 'book_update' book.id %}"><button class="btn btn-info" type="button">ویرایش</button></a>
         <br>
         <a href="{% url 'book_list' %}">لیست همه کتاب ها</a>
 
